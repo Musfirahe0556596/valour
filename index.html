@@ -3,14 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Valour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Gaegu&family=Noto+Sans+KR&display=swap" rel="stylesheet">
 </head>
 <style>
+    .valour {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .valourtext {
+        font-size: 70px;
+        font-family: 'Acme', sans-serif;
+        color:#174955;
+    }
+
+    /*blinking animation text*/
+    .blink {
+        display: inline;
+        animation: blink 1s steps(1) infinite;
+        -webkit-animation: blink 1s steps(1) infinite;
+    }
+    @keyframes blink { 50% { color: transparent; } }
+    @-webkit-keyframes blink { 50% { color: transparent; } }
 </style>
 <body>
     <section>
-        <div>Hello Valour :)</div>
-        <input type="text" name="getvalourpassword" id="getvalourpassword" placeholder="ENTER YO PASSWORD">
-        <!--On click of button, check password and then produce that html page-->
+        <div class="valour">
+            <img src="http://drive.google.com/uc?export=view&id=1N-53a-rLGVgRysyDXc9fGGJ4k6fls7K1" width="200px" height="200px"><br/>
+            <div class="blink valourtext">Hello Valour :)</div>
+        </div>
     </section>
 </body>
 </html>
